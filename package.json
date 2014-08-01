@@ -1,0 +1,13 @@
+{ 
+  "name": "flow",
+  "version": "0.0.1",
+  "description": "Simple flow control utility for node.js",
+  "author": "Jayy Vis <jayyvis@gmail.com>",
+  "dependencies": {},  
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/jayyvis/flow.git"
+  },
+  "license": "MIT",
+  "main": "lib/flow"
+}
