@@ -1,4 +1,4 @@
-# flow
+# node-flow
 
 Node.js utility to execute a sequence of asynchronous functions without getting into callback hell. 
 
@@ -15,11 +15,17 @@ It has the good parts of [async.waterfall](https://github.com/caolan/async#water
 - keeps 'next' as explicit argument (not using ```this```)
 - receives an explicit error callback (no more ```if (err) return callback(err)``` in every step)
 - halts the execution of remaining steps on error
- 
+
+### installation
+```
+npm install node-flow 
+```
 
 ### example
 
 ```
+var flow = require('node-flow');
+
 function getThisDone(callback) {
 	flow(callback,
 		function one(next) {
